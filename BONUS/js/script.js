@@ -59,10 +59,14 @@ for (let i=0; i<dipendenti.length; i++){
     // dichiaro 3 variabili che conterranno le 3 informazioni del dipendente
     let name = `<h2>${dipendenti[i].name}</h2>`;
     let role = `<h4>${dipendenti[i].role}</h4>`;
-    let image = `<h6>${dipendenti[i].image}</h6>`;
+
+    // BONUS 1: Trasformare la stringa foto in una immagine effettiva
+    let image = document.createElement('img');
+    image.src = `./img/${dipendenti[i].image}`
 
     // inietto al div interno le 3 variabili dichiarate precedentemente
-    dipendente.innerHTML = name + "<br>" + role + "<br>" + image;
+    dipendente.innerHTML = name + "<br>" + role + "<br>";
+    div.appendChild(image);
 
     // appendo il div dipendente al contenitore
     div.appendChild(dipendente);
