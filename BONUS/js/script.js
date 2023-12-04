@@ -65,13 +65,15 @@ for (let i=0; i<dipendenti.length; i++){
     image.src = `./img/${dipendenti[i].image}`
 
     // inietto al div interno le 3 variabili dichiarate precedentemente
-    dipendente.innerHTML = name + "<br>" + role + "<br>";
+    dipendente.innerHTML = name + "<br>" + role;
+
+    // appendo l'immagine del dipendente al div contenitore
     div.appendChild(image);
 
-    // appendo il div dipendente al contenitore
+    // appendo il div dipendente al div contenitore
     div.appendChild(dipendente);
 
-    // appendo il contenitore all'elemento principale
+    // appendo il contenitore all'elemento HTML principale
     lista_dipendenti.appendChild(div);
 }
 
