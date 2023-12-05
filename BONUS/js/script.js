@@ -60,9 +60,12 @@ for (let i=0; i<dipendenti.length; i++){
     let name = `<h2>${dipendenti[i].name}</h2>`;
     let role = `<h4>${dipendenti[i].role}</h4>`;
 
+
     // BONUS 1: Trasformare la stringa foto in una immagine effettiva
     let image = document.createElement('img');
     image.src = `./img/${dipendenti[i].image}`
+
+    image.classList.add('mb-3')
 
     // inietto al div interno le 3 variabili dichiarate precedentemente
     dipendente.innerHTML = name + "<br>" + role;
@@ -72,6 +75,9 @@ for (let i=0; i<dipendenti.length; i++){
 
     // appendo il div dipendente al div contenitore
     div.appendChild(dipendente);
+
+    // aggiungo classi di stile
+    dipendente.classList.add('text-center')
 
     // appendo il contenitore all'elemento HTML principale
     lista_dipendenti.appendChild(div);
