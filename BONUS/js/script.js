@@ -50,8 +50,7 @@ for (let i=0; i<dipendenti.length; i++){
     let div = document.createElement('div');
 
     // al div creato precedentemente aggiungo delle classi di stile
-    div.classList.add('col-4');
-    div.classList.add('p-3')
+    div.classList.add('col-4', 'p-3');
     
     // mi creo un ulteriore div interno per raccogliere le info di un dipendente
     let dipendente = document.createElement('div');
@@ -64,6 +63,8 @@ for (let i=0; i<dipendenti.length; i++){
     // BONUS 1: Trasformare la stringa foto in una immagine effettiva
     let image = document.createElement('img');
     image.src = `./img/${dipendenti[i].image}`
+
+    // oppure let image = `<img src="./"/img/${dipendenti[i].image} alt="${dipendenti[i].name}"`
 
     image.classList.add('mb-3')
 

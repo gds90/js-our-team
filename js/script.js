@@ -54,7 +54,7 @@ for (let i=0; i<dipendenti.length; i++){
 
     // al div creato precedentemente aggiungo delle classi di stile
     div.classList.add('col-4');
-    div.classList.add('p-3')
+    div.classList.add('p-3');
     
     // mi creo un ulteriore div interno per raccogliere le info di un dipendente
     let dipendente = document.createElement('div');
