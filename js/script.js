@@ -34,10 +34,10 @@ const dipendenti = [
 ]
 
 // MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-for (let i=0; i<dipendenti.length; i++){
-    let member = team[i];
+for (let i = 0; i < dipendenti.length; i++) {
+    let member = dipendenti[i];
 
-    for (let key in member){
+    for (let key in member) {
         console.log(member[key]);
     }
 }
@@ -48,14 +48,14 @@ for (let i=0; i<dipendenti.length; i++){
 let lista_dipendenti = document.getElementById('lista_dipendenti');
 
 // ciclo l'array dei dipendenti tramite un ciclo For
-for (let i=0; i<dipendenti.length; i++){
+for (let i = 0; i < dipendenti.length; i++) {
     // mi creo un div contenitore che conterrà tutte le info di un dipendente
     let div = document.createElement('div');
 
     // al div creato precedentemente aggiungo delle classi di stile
     div.classList.add('col-4');
     div.classList.add('p-3');
-    
+
     // mi creo un ulteriore div interno per raccogliere le info di un dipendente
     let dipendente = document.createElement('div');
 
